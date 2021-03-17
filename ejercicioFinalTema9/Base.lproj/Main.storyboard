@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ejercicioFinalTema9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GxJ-Tb-vIR">
+                                <rect key="frame" x="40" y="10" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Onw-we-JOi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canción" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIC-dh-yux">
+                                <rect key="frame" x="10" y="148" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SFDK - Los Funkcionarios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULB-T2-vfN">
+                                <rect key="frame" x="10" y="290.5" width="300" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znI-mj-hYV">
+                                <rect key="frame" x="90" y="188.5" width="31" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="backward.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <state key="selected">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                                </state>
+                                <connections>
+                                    <action selector="PreviousSong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wS0-3Z-nJA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-Ct-5tZ">
+                                <rect key="frame" x="199.5" y="188.5" width="31" height="22"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="forward.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextSong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c98-yh-dqD"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lKM-zg-tdZ">
+                                <rect key="frame" x="8" y="240.5" width="304" height="31"/>
+                                <connections>
+                                    <action selector="updateSong:" destination="BYZ-38-t0r" eventType="valueChanged" id="VV6-nw-mA9"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Violadores del verso - Vivir para contarlo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG3-bP-fkQ">
+                                <rect key="frame" x="10" y="318.5" width="300" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mala Rodríguez - Por la noche" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b4-RE-Dhs">
+                                <rect key="frame" x="10" y="346.5" width="300" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toteking - Puzzle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZM-eV-jQZ">
+                                <rect key="frame" x="10" y="374.5" width="300" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shotta - Ganador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubd-e1-Eeh">
+                                <rect key="frame" x="10" y="402.5" width="300" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgl-0I-LOK">
+                                <rect key="frame" x="151" y="188.5" width="18.5" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="PlaySong:" destination="BYZ-38-t0r" eventType="touchUpInside" id="32E-z7-2D1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dG3-bP-fkQ" secondAttribute="trailing" constant="10" id="1A5-i5-goh"/>
+                            <constraint firstItem="ULB-T2-vfN" firstAttribute="top" secondItem="lKM-zg-tdZ" secondAttribute="bottom" constant="20" id="2gq-uV-Pj6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AuX-Ct-5tZ" secondAttribute="trailing" constant="89.5" id="3mu-mM-5KR"/>
+                            <constraint firstItem="lKM-zg-tdZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4xb-py-hX8"/>
+                            <constraint firstItem="hIC-dh-yux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7D1-wg-dAm"/>
+                            <constraint firstItem="znI-mj-hYV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="80z-Qy-wh2"/>
+                            <constraint firstItem="lKM-zg-tdZ" firstAttribute="top" secondItem="AuX-Ct-5tZ" secondAttribute="bottom" constant="30" id="9Ji-CZ-Zae"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lKM-zg-tdZ" secondAttribute="trailing" constant="10" id="BCd-mO-bem"/>
+                            <constraint firstItem="GxJ-Tb-vIR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BzC-1v-YRS"/>
+                            <constraint firstItem="AuX-Ct-5tZ" firstAttribute="leading" secondItem="Mgl-0I-LOK" secondAttribute="trailing" constant="30" id="DoC-TK-H6q"/>
+                            <constraint firstItem="Mgl-0I-LOK" firstAttribute="top" secondItem="hIC-dh-yux" secondAttribute="bottom" constant="20" id="GzB-xJ-nda"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ubd-e1-Eeh" secondAttribute="trailing" constant="10" id="Ljd-IA-tEy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5b4-RE-Dhs" secondAttribute="trailing" constant="10" id="MRD-Dp-bKk"/>
+                            <constraint firstItem="hIC-dh-yux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PeK-7a-gMw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ULB-T2-vfN" secondAttribute="trailing" constant="10" id="Q26-Lt-Ceu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZM-eV-jQZ" secondAttribute="trailing" constant="10" id="RCh-qi-BYP"/>
+                            <constraint firstItem="GxJ-Tb-vIR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="TsG-Wn-B8x"/>
+                            <constraint firstItem="Mgl-0I-LOK" firstAttribute="leading" secondItem="znI-mj-hYV" secondAttribute="trailing" constant="30" id="UAw-4s-hWv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hIC-dh-yux" secondAttribute="trailing" constant="10" id="YT9-YF-jkR"/>
+                            <constraint firstItem="hIC-dh-yux" firstAttribute="top" secondItem="GxJ-Tb-vIR" secondAttribute="bottom" constant="10" id="Zs7-0m-x4Z"/>
+                            <constraint firstItem="Ubd-e1-Eeh" firstAttribute="top" secondItem="RZM-eV-jQZ" secondAttribute="bottom" constant="10" id="auF-rB-nJn"/>
+                            <constraint firstItem="dG3-bP-fkQ" firstAttribute="top" secondItem="ULB-T2-vfN" secondAttribute="bottom" constant="10" id="bac-KF-u1S"/>
+                            <constraint firstItem="znI-mj-hYV" firstAttribute="top" secondItem="hIC-dh-yux" secondAttribute="bottom" constant="20" id="e09-s3-6MN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GxJ-Tb-vIR" secondAttribute="trailing" constant="40" id="gc3-yB-Qyl"/>
+                            <constraint firstItem="Ubd-e1-Eeh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ihl-iE-HZP"/>
+                            <constraint firstItem="Mgl-0I-LOK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jTY-zV-yVk"/>
+                            <constraint firstItem="AuX-Ct-5tZ" firstAttribute="top" secondItem="hIC-dh-yux" secondAttribute="bottom" constant="20" id="kv5-BX-jYk"/>
+                            <constraint firstItem="RZM-eV-jQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lDt-W9-NKD"/>
+                            <constraint firstItem="GxJ-Tb-vIR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="mfE-Eu-aMR"/>
+                            <constraint firstItem="lKM-zg-tdZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="pio-Kt-MDQ"/>
+                            <constraint firstItem="5b4-RE-Dhs" firstAttribute="top" secondItem="dG3-bP-fkQ" secondAttribute="bottom" constant="10" id="tIe-pl-dvV"/>
+                            <constraint firstItem="5b4-RE-Dhs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="v9b-Px-uLh"/>
+                            <constraint firstItem="ULB-T2-vfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vWt-vx-8QM"/>
+                            <constraint firstItem="RZM-eV-jQZ" firstAttribute="top" secondItem="5b4-RE-Dhs" secondAttribute="bottom" constant="10" id="wCy-21-Cdw"/>
+                            <constraint firstItem="dG3-bP-fkQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zQh-Cx-p3K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="GxJ-Tb-vIR" id="grp-fi-Doj"/>
+                        <outlet property="labelMala" destination="5b4-RE-Dhs" id="tin-r0-4t6"/>
+                        <outlet property="labelSFDK" destination="ULB-T2-vfN" id="ZBd-JE-g8F"/>
+                        <outlet property="labelShotta" destination="Ubd-e1-Eeh" id="YDe-bg-aYo"/>
+                        <outlet property="labelSong" destination="hIC-dh-yux" id="WBi-9B-YPu"/>
+                        <outlet property="labelTote" destination="RZM-eV-jQZ" id="Hur-Q7-KQK"/>
+                        <outlet property="labelVioladores" destination="dG3-bP-fkQ" id="X1o-p1-hIC"/>
+                        <outlet property="playButton" destination="Mgl-0I-LOK" id="hb8-BR-c3p"/>
+                        <outlet property="sliderSong" destination="lKM-zg-tdZ" id="YU3-J9-HyN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="123.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="79"/>
+        <image name="forward.fill" catalog="system" width="128" height="79"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
